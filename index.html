@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM animation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="project.js" defer></script:ani>
+</head>
+<body>
+  <main>
+ 
+    <form>
+<!-----------ATM FRONT VIEW------->
+     
+       <div class="atmFront">
+        
+       <div class="frontCardNum">
+          <div class="border"></div>
+         <img src="" alt="ATM chip" class="chip">
+         <div class="childCardNum">
+         <input class="atmFrontInput" type="number" readonly placeholder="####">
+         <input class="atmFrontInput " type="password"  placeholder="####" >
+             <input class="atmFrontInput " type="password" readonly placeholder="####">
+         <input class="atmFrontInput" type="number" readonly placeholder="####">
+           </div>
+         <div >
+           <div class="nameStyle">
+           <label for="holder" class="frontHolderlabel">Card Holder</label>
+           <input type="text" class="fullNameInput" readonly placeholder="FULL NAME">
+             </div>
+           <div class="expireStyle">
+           <label for="expire" class="expires">Expires</label>
+             <input type="text" readonly class="expireInput" placeholder="MM /">
+               <input type="text" readonly class="expireInput" placeholder="YY">
+             </div>
+         </div>
+       </div>
+       </div>
+<!---------ATM BACK VIEW-------->
+      <div class="atmBack">
+        <div class="backContent">
+        <div class="blackPlate"></div>
+          <div class="backCvvContent">
+            <label for="cvv">Cvv</label>
+            <input type="password" class="backCvv" readonly>
+          </div>
+          </div>
+      </div>
+<!------------FORM CONTENT--------->
+      <div class="formContent">
+      <label for="Card number">Card Number</label>
+        <input type="number" class="typedNum">
+      <label for="Card holder">Card Holder</label>
+      <input type="text" class="typedHolder">
+      <div class="flexBox">
+        <div class="MonthYear">
+      <label for="expire date">Exipiration Date</label>
+          <div class="flexBox extra">
+      <select id="months" name="months" >
+  <option class="disable">Month</option>
+  <option >01</option>
+  <option >02</option>
+  <option >03</option>
+  <option >04</option>
+  <option >05</option>
+  <option >06</option>
+  <option >07</option>
+  <option >08</option>
+  <option >09</option>
+  <option >10</option>
+  <option >11</option>
+  <option >12</option>
+</select>
+        <select id="years" name="years">
+  <option class="disable" >Year</option>
+  <option >2001</option>
+  <option >2002</option>
+  <option >2003</option>
+  <option >2004</option>
+  <option >2005</option>
+  <option >2006</option>
+  <option >2007</option>
+  <option >2008</option>
+  <option >2009</option>
+  <option >2010</option>
+  <option >2011</option>
+  <option >2012</option>
+</select>
+            </div>
+          </div>
+        <div class="cvv">
+      <label for="cvv" class="cvv">CVV</label>
+    <input type="number" class="cvvInput"/>
+        </div>
+      </div>
+        <input type="submit">
+        </div>
+    </form>
+  </main>
+</body>
+</html>
