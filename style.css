@@ -1,0 +1,262 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  box-sizing:border-box;
+  display:grid;
+  place-items:center;
+ height:60vw;
+}
+
+form{
+  display:grid;
+ 
+  place-items:center;
+  
+  border:1px solid;
+  padding:50px;
+  margin-top:150px;
+margin-bottom:30px;
+ width:50vw;
+  border-radius:10px;
+  position:relative;
+}
+.formContent{
+  
+  
+  margin-top:10vw;
+  margin-bottom: -3vw;
+}
+label{
+  display:block;
+ margin: 10px auto 3px;
+  font-size:1.6vw;
+  letter-spacing:1px;
+}
+.flexBox{
+  display:flex;
+  gap:3vw;
+}
+.extra{
+  gap:0;
+}
+input{
+  height:4.5vw;
+  width:46.97vw;
+  font-size:1.8vw;
+  padding-left:10px;
+  outline:none;
+  border:1px solid;
+  transition:border-color .8s;
+}
+.cvvInput,select{
+  width:14vw;
+  height:5vw;
+  font-size:1.8vw;
+  border:1px solid;
+}
+select{
+  margin-right:1vw;
+ transition:border-color .8s
+}
+select:focus{
+  border-color:cyan;
+}
+.cvvInput{
+  height:4.69vw;
+}
+input:focus{
+  border-color:cyan;
+}
+input:hover,select:hover{
+  border-color:cyan;
+}
+input[type=submit]{
+  margin-top:20px;
+  border:none;
+  width:49vw;
+  font-size:3.5vw;
+  letter-spacing:1px;
+  padding:1vw 0 5vw 0;
+  border-radius:5px;
+  background-color: blue;
+  color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.atmFront,.atmBack{
+  height:25vw;
+  width:40vw;
+  border-radius:10px;
+  background-color: black;
+  position:absolute;
+    top:-13vw;
+cursor:pointer;
+   transition: all 0.35s cubic-bezier(0.71, 0.03, 0.56, 0.85);
+}
+.onfront{
+  animation:twirl .2s  ease-out forwards;
+}
+.onBack{
+   animation:twirl .2s .2s  ease-in forwards reverse;
+}
+
+.atmBack{
+ background-color: #20262E;
+ transform:rotateY(90deg)
+}
+
+.backContent{
+   height:25vw;
+  width:40vw;
+  postion:relative;
+  display:flex;
+  justify-content:center;
+}
+.blackPlate,.backCvv{
+   width:40vw;
+  height:4vw;
+  position:absolute;
+  top:4vw;
+  background-color:black;
+}
+.backCvvContent{
+ 
+  margin-left:1.5vw;
+  width:40vw;
+  position:absolute;
+  top:10vw;
+}
+.backCvvContent label{
+  color:white;
+  position:absolute;
+  right:3vw;
+  font-size:2.3vw;
+}
+.backCvv{
+  background-color:white;
+  width:34vw;
+  border-radius:10px;
+  text-align:right;
+  padding-right:2vw;
+  margin-top:1vw;
+  font-size:4vw;
+  
+}
+.frontCardNum{
+  position:relative;
+ 
+  border-radius:10px;
+ height:25vw;
+display:flex;
+  justify-content:center;
+  width:40vw;
+  
+}
+.childCardNum,.nameStyle,.expireStyle{
+  position:absolute;
+  top:11vw;
+ 
+}
+.nameStyle,.expireStyle{
+  position:absolute;
+  top:16vw;
+  
+}
+.nameStyle{
+  left:3vw;
+  width:22vw;
+  padding-left:4px;
+}
+.expireStyle{
+ right:1.5vw;
+ 
+  width:10vw;
+  padding-left:4px;
+}
+
+.childCardNum{
+ width:90%;
+height:5vw;
+   display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.atmFrontInput{
+  display:inline;
+  width:20%;
+  
+  font-weight:700;
+  font-size:2vw;
+  color:pink;
+  background-color: black;
+  letter-spacing:4px;
+  border:none;
+ 
+}
+.frontCardNum input::placeholder{
+  color:white;
+}
+.cardHolderFront{
+  top:16vw;
+    left:3.2vw;
+  display:flex;
+  gap:10px;
+ 
+
+}
+.frontHolderlabel,.expires{
+  color:white;
+  margin-bottom:0;
+ 
+}
+.fullNameInput{
+  width:20vw;
+  border-radius:8px;
+  border:none;
+  color:white;
+ background-color: black;
+  padding:0;
+  
+  
+}
+.expireInput{
+  width:4vw;
+  border-radius:5px;
+  color:white;
+  background-color: black;
+  padding:0;
+  border: none;
+}
+.chip{
+  width:30%;
+position:absolute;
+  left:4px;
+  top:2px;
+}
+
+@keyframes twirl{
+  0%{
+    transform:rotateY(0deg);
+  }
+  50%{
+     transform:rotateY(60deg);
+  }
+  100%{
+     transform:rotateY(90deg);
+  }
+}
+.border{
+  border: 2px solid white;
+  border-radius:2px;
+   height:25vw;
+  width:40vw;
+  position:absolute;
+
+  transition: all 0.35s cubic-bezier(0.71, 0.03, 0.56, 0.85);
+
+}
